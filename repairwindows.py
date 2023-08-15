@@ -26,6 +26,8 @@ if __name__ == "__main__":
         pyuac.runAsAdmin()
     else:
         main()
+        print("This windows will close in 10 seconds!")
+        sleep(10)
 
 
 
