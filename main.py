@@ -10,7 +10,7 @@ def main():
         if choice == "1":
             os.system("python updateall.py")
         elif choice == "2":
-            os.system("python repairwindows1.py")
+            os.system("python repairwindows.py")
         elif choice == "3":
             break
         else:

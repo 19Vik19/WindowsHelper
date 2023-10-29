@@ -8,7 +8,9 @@ def main():
     command_DISM2 = 'DISM /Online /Cleanup-Image /ScanHealth'
     command_DISM3 = 'DISM /Online /Cleanup-Image /RestoreHealth'
     command_chkdsk = 'CHKDSK /f /r /x'
+    command_checkmem = 'mdsched'
 
+    
     os.system(command_sfc)
     sleep(1)
     os.system(command_DISM1)
@@ -18,6 +20,8 @@ def main():
     os.system(command_DISM3)
     sleep(1)
     os.system(command_chkdsk)
+    sleep(1)
+    os.system(command_checkmem)
 
 if __name__ == "__main__":
     if not pyuac.isUserAdmin():
